@@ -4,7 +4,7 @@ const {createRequestHandler} = require('@remix-run/express');
 const express = require('express');
 const path = require('path');
 
-const BUILD_DIR = path.join(process.cwd(), 'dist'); // Ajusta si tu build sale en otra carpeta
+const BUILD_DIR = path.join(process.cwd(), 'dist', 'server'); // o 'dist' según tu build
 const app = express();
 
 app.use(express.static('public'));
